@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}     
+main {
+    background-color: transparent; 
+    border: 1px solid #000000;
+    border-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('https://viajonarios.com/wp-content/uploads/2024/07/roteiro-ottawa.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+button {
+    background-color: #4CAF50; 
+    border: 1px solid #333b33;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    
+}
+button:hover {
+  background-color: cornflowerblue;
+  color: white;
+  border: 2px solid #000000;
+}

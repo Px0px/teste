@@ -1,0 +1,48 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-align: center;
+}
+body {
+    display: block;
+    text-align: center;
+    background-image: url('https://img.freepik.com/vetores-gratis/gradiente-de-fundo-de-quadro-de-arame-abstrato_23-2149009903.jpg?semt=ais_hybrid&w=740&q=80');
+    background-size: cover;
+    color: aliceblue;
+}
+a {
+    text-decoration: none;
+    color: #00c3ff;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+}
+p {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(136, 100, 237);
+}
+li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+a:hover {
+    color: #006eff;
+    text-decoration: underline;
+}
