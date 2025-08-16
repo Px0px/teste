@@ -1,1 +1,1 @@
-# teste
+site criado para competir entre amigos e melhorar as abilidades dos mesmos
