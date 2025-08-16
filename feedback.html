@@ -26,9 +26,16 @@
 
             <button type="submit">Enviar</button>
         </form>
+        <script>
+            document.querySelector('form').addEventListener('submit', function(e) {
+                if (this.checkValidity()) {
+                    window.location.href = 'index.html';
+                } else {
+                    this.reportValidity();
+                }
+                e.preventDefault();
+            });
+        </script>
+        </script>
 </body>
 </html>
-    <footer>
-        <p>© 2025 Otawwa city. Todos os direitos reservados.</p>
-        <p>Desenvolvido por Pedro Eduardo e João Paulo</p>
-    </footer> 
