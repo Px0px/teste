@@ -1,1 +1,1 @@
-site criado para competir entre amigos e melhorar as abilidades dos mesmos
+# site criado para competir entre amigos e melhorar as abilidades dos mesmos
