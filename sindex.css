@@ -25,7 +25,7 @@ body {
     
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    background-image: url('https://viajonarios.com/wp-content/uploads/2024/07/roteiro-ottawa.jpeg');
+    background-image: url('https://img.freepik.com/vetores-gratis/gradiente-de-fundo-de-quadro-de-arame-abstrato_23-2149009903.jpg?semt=ais_hybrid&w=740&q=80');
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -54,3 +54,45 @@ p{
     text-align: justify;
     margin-top: -1rem;
 }
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+.fade-in:nth-child(1) { animation-delay: 0.2s; }
+.fade-in:nth-child(3) { animation-delay: 0.6s; }
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+.pulse {
+    animation: pulse 1.2s infinite;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(18, 220, 0, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(220,0,0,0); }
+    100% { box-shadow: 0 0 0 0 rgba(220,0,0,0); }
+}
+
+.slide-out-left {
+    animation: slideOutLeft 0.7s forwards;
+}
+@keyframes slideOutLeft {
+    to {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+}
+
+.slide-in-right {
+    animation: slideInRight 0.7s forwards;
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
