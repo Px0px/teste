@@ -1,51 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Otawwa city</title>
-  <link rel="stylesheet" href="sfeedback.css">
-  <link rel="icon" href="imgs/canada.png" type="image/x-icon">
-</head>
-<body>
-  <legend>
-   <h1>Deixe seu Feedback</h1>
-    <div class="anima">
-    <a class="a1" href="index.html">Início</a> 
-    <a class="a2" href="sobre.html">Sobre</a> 
-    <a class="a3" href="princloc.html">Principais locais</a>
-    
-    </div>
-  </legend>
-
-  <main>
-    <form id="feedbackForm">
-      <label for="name">Nome completo:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-
-      <label for="email">E-mail:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-
-      <label for="feedback">Feedback:</label><br>
-      <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
-
-      <button type="submit">ENVIAR</button>
-
-    <script>
-        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
-          e.preventDefault();
-          const name = document.getElementById('name').value.trim();
-          const email = document.getElementById('email').value.trim();
-          const feedback = document.getElementById('feedback').value.trim();
-          if (name && email && feedback) {
-        window.location.href = 'index.html';
-          }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Otawwa city</title>
+    <link rel="stylesheet" href="sfeedback.css" />
+    <link rel="icon" href="imgs/canada.png" type="image/x-icon" />
+  </head>
+  <body>
+    <legend>
+      <h1>Deixe seu Feedback</h1>
+      <div class="anima">
+        <a class="a1" href="index.html">Início</a>
+        <a class="a2" href="sobre.html">Sobre</a>
+        <a class="a3" href="princloc.html">Principais locais</a>
+      </div>
+      <script>
+        function telaCaindo() {
+          const body = document.body;
+          body.style.transition =
+            "transform 2s cubic-bezier(.68,-0.55,.27,1.55)";
+          body.style.transform = "translateY(100vh)";
+        }
+        document.querySelectorAll(".anima a").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            telaCaindo();
+            setTimeout(() => {
+              window.location.href = this.href;
+            }, 1000);
+          });
         });
       </script>
-    </form>
-  </main> 
-</body>
- <footer>
-        <p>&copy2025 PXJP. Todos os direitos reservados. </p>
-    </footer>
+    </legend>
+
+    <main>
+      <form id="feedbackForm">
+        <label for="name">Nome completo:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">E-mail:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="feedback">Feedback:</label><br />
+        <textarea
+          id="feedback"
+          name="feedback"
+          rows="4"
+          cols="50"
+          required
+        ></textarea
+        ><br /><br />
+
+        <button type="submit">ENVIAR</button>
+
+        <script>
+          document
+            .getElementById("feedbackForm")
+            .addEventListener("submit", function (e) {
+              e.preventDefault();
+              const name = document.getElementById("name").value.trim();
+              const email = document.getElementById("email").value.trim();
+              const feedback = document.getElementById("feedback").value.trim();
+              if (name && email && feedback) {
+                window.location.href = "index.html";
+              }
+            });
+        </script>
+      </form>
+    </main>
+  </body>
+  <footer>
+    <p>&copy2025 PXJP. Todos os direitos reservados.</p>
+  </footer>
 </html>

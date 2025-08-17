@@ -1,88 +1,161 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ottawa city</title>
-        <link rel="stylesheet" href="sprincloc.css">
-        <link rel="icon" href="imgs/canada.png" type="image/x-icon">
-    </head>
-    <body>
-        <header>
-            <h1>Principais locais em Ottawa</h1>
-            <div class="anima">
-            <a class="a1" href="index.html">Início</a>
-            <a class="a2" href="sobre.html">sobre</a>
-            <a class="a3" href="feedback.html">Deixe seu Feedback</a>
-            </div>
-        </header>    
-        <main>
-                <div class="local-list">
-                <h2>Locais Imperdíveis em Ottawa</h2>
-                    <ul>
-                        <li>• Parlamento do Canadá</li>
-                        <li>• Museu Canadense de História</li>
-                        <li>• Galeria Nacional do Canadá</li>
-                        <li>• Canal Rideau</li>
-                        <li>• ByWard Market</li>
-                        <li>• Torre da Paz</li>
-                        <li>• Parque Gatineau</li>
-                    </ul>
-                </div>
-                <br>
-                <section>
-                <p><strong>Parliament Hill:</strong> Local icónico e símbolo da democracia canadense, abriga os edifícios do Parlamento com sua arquitetura neogótica impressionante. É palco de eventos nacionais, como a troca da guarda e as celebrações do Dia do Canadá, que reúnem milhares de pessoas anualmente.</p>
-                </section>
-                <br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ottawa city</title>
+    <link rel="stylesheet" href="sprincloc.css" />
+    <link rel="icon" href="imgs/canada.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Principais locais em Ottawa</h1>
+      <div class="anima">
+        <a class="a1" href="index.html">Início</a>
+        <a class="a2" href="sobre.html">sobre</a>
+        <a class="a3" href="feedback.html">Deixe seu Feedback</a>
+      </div>
+      <script>
+        function telaCaindo() {
+          const body = document.body;
+          body.style.transition =
+            "transform 2s cubic-bezier(.68,-0.55,.27,1.55)";
+          body.style.transform = "translateX(-100vh)";
+        }
+        document.querySelectorAll(".anima a").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            telaCaindo();
+            setTimeout(() => {
+              window.location.href = this.href;
+            }, 1000);
+          });
+        });
+      </script>
+    </header>
+    <main>
+      <div class="local-list">
+        <h2>Locais Imperdíveis em Ottawa</h2>
+        <ul>
+          <li>• Parlamento do Canadá</li>
+          <li>• Museu Canadense de História</li>
+          <li>• Galeria Nacional do Canadá</li>
+          <li>• Canal Rideau</li>
+          <li>• ByWard Market</li>
+          <li>• Torre da Paz</li>
+          <li>• Parque Gatineau</li>
+        </ul>
+      </div>
+      <br />
+      <section>
+        <p>
+          <strong>Parliament Hill:</strong> Local icónico e símbolo da
+          democracia canadense, abriga os edifícios do Parlamento com sua
+          arquitetura neogótica impressionante. É palco de eventos nacionais,
+          como a troca da guarda e as celebrações do Dia do Canadá, que reúnem
+          milhares de pessoas anualmente.
+        </p>
+      </section>
+      <br />
 
-                <section>
-                <p><strong>Canal Rideau:</strong> Construído no início do século XIX, liga Ottawa a Kingston. No verão, é perfeito para passeios de barco, caminhadas e ciclismo à beira d’água; no inverno, transforma-se na maior pista de patinação no gelo do mundo, atraindo moradores e turistas.</p>
-                </section>
-                <br>
+      <section>
+        <p>
+          <strong>Canal Rideau:</strong> Construído no início do século XIX,
+          liga Ottawa a Kingston. No verão, é perfeito para passeios de barco,
+          caminhadas e ciclismo à beira d’água; no inverno, transforma-se na
+          maior pista de patinação no gelo do mundo, atraindo moradores e
+          turistas.
+        </p>
+      </section>
+      <br />
 
-                <section>
-                <p><strong>ByWard Market:</strong> Fundado em 1826, é um vibrante centro de comércio, gastronomia e vida noturna. Com inúmeros restaurantes, bares e cafés, oferece culinária variada, desde pratos tradicionais canadenses até cozinha internacional. Também sedia eventos culturais e feiras ao longo do ano.</p>
-                </section>
-                <br>
+      <section>
+        <p>
+          <strong>ByWard Market:</strong> Fundado em 1826, é um vibrante centro
+          de comércio, gastronomia e vida noturna. Com inúmeros restaurantes,
+          bares e cafés, oferece culinária variada, desde pratos tradicionais
+          canadenses até cozinha internacional. Também sedia eventos culturais e
+          feiras ao longo do ano.
+        </p>
+      </section>
+      <br />
 
-                <section>
-                <p><strong>National Gallery of Canada:</strong> Um dos maiores museus de arte do país, abriga obras de mestres canadenses e internacionais. Destaca-se a coleção de arte indígena, assim como a icónica escultura da aranha gigante "Maman", de Louise Bourgeois. O museu promove exposições temporárias e eventos culturais frequentes.</p>
-                </section>
-                <br>
+      <section>
+        <p>
+          <strong>National Gallery of Canada:</strong> Um dos maiores museus de
+          arte do país, abriga obras de mestres canadenses e internacionais.
+          Destaca-se a coleção de arte indígena, assim como a icónica escultura
+          da aranha gigante "Maman", de Louise Bourgeois. O museu promove
+          exposições temporárias e eventos culturais frequentes.
+        </p>
+      </section>
+      <br />
 
-                <section>
-                <p><strong>Canadian Museum of Nature:</strong> Museu de ciências naturais que encanta com fósseis de dinossauros, réplicas de ecossistemas e exposições interativas. Ideal para todas as idades, combina conhecimento com entretenimento e realiza oficinas educativas e eventos especiais para famílias.</p>
-                </section>
-                <br>
+      <section>
+        <p>
+          <strong>Canadian Museum of Nature:</strong> Museu de ciências naturais
+          que encanta com fósseis de dinossauros, réplicas de ecossistemas e
+          exposições interativas. Ideal para todas as idades, combina
+          conhecimento com entretenimento e realiza oficinas educativas e
+          eventos especiais para famílias.
+        </p>
+      </section>
+      <br />
 
-                <section>
-                <p><strong>Canadian Museum of History:</strong> Localizado em Gatineau, oferece exposições que exploram a rica herança cultural e histórica do Canadá. O seu Grande Salão é famoso pelas enormes janelas com vista para o Parlamento. O museu também promove festivais, palestras e eventos comemorativos.</p>
-                </section>
-                <br>
+      <section>
+        <p>
+          <strong>Canadian Museum of History:</strong> Localizado em Gatineau,
+          oferece exposições que exploram a rica herança cultural e histórica do
+          Canadá. O seu Grande Salão é famoso pelas enormes janelas com vista
+          para o Parlamento. O museu também promove festivais, palestras e
+          eventos comemorativos.
+        </p>
+      </section>
+      <br />
 
-                <section>
-                <p><strong>Major’s Hill Park:</strong> Parque histórico no coração de Ottawa, oferece vistas panorâmicas para o Parliament Hill e o Canal Rideau. Muito procurado para piqueniques, caminhadas e eventos ao ar livre, o parque recebe concertos e festivais durante o verão.</p>
-                </section>
-                <br>
+      <section>
+        <p>
+          <strong>Major’s Hill Park:</strong> Parque histórico no coração de
+          Ottawa, oferece vistas panorâmicas para o Parliament Hill e o Canal
+          Rideau. Muito procurado para piqueniques, caminhadas e eventos ao ar
+          livre, o parque recebe concertos e festivais durante o verão.
+        </p>
+      </section>
+      <br />
 
-                <section>
-                <p><strong>Rideau Hall:</strong> Residência oficial do Governador-Geral do Canadá desde 1867. Os jardins e trilhas são abertos ao público, permitindo caminhadas e visitas guiadas pela mansão. O local também recebe cerimônias oficiais e eventos culturais especiais.</p>
-                </section>
-                <br>
+      <section>
+        <p>
+          <strong>Rideau Hall:</strong> Residência oficial do Governador-Geral
+          do Canadá desde 1867. Os jardins e trilhas são abertos ao público,
+          permitindo caminhadas e visitas guiadas pela mansão. O local também
+          recebe cerimônias oficiais e eventos culturais especiais.
+        </p>
+      </section>
+      <br />
 
-                <section>
-                <p><strong>Dows Lake:</strong> Lago artificial que se torna palco de atividades sazonais. No verão, há passeios de pedalinho, festivais florais e mercados de produtos locais; no inverno, o lago é usado para patinação e trilhas de esqui cross-country.</p>
-                </section>
-                <br>
+      <section>
+        <p>
+          <strong>Dows Lake:</strong> Lago artificial que se torna palco de
+          atividades sazonais. No verão, há passeios de pedalinho, festivais
+          florais e mercados de produtos locais; no inverno, o lago é usado para
+          patinação e trilhas de esqui cross-country.
+        </p>
+      </section>
+      <br />
 
-                <section>
-                <p><strong>Gatineau Park:</strong> Reserva natural com mais de 361 km², repleta de trilhas, lagos e miradouros. Popular para caminhadas, ciclismo, esqui e observação da vida selvagem, o parque organiza eventos ao ar livre, incluindo acampamentos e programas educacionais sobre natureza.</p>
-                </section>
-                <br>
-        </main>
-
-    </body>
-    <footer>
-        <p>&copy2025 PXJP. Todos os direitos reservados. </p>
-    </footer>
+      <section>
+        <p>
+          <strong>Gatineau Park:</strong> Reserva natural com mais de 361 km²,
+          repleta de trilhas, lagos e miradouros. Popular para caminhadas,
+          ciclismo, esqui e observação da vida selvagem, o parque organiza
+          eventos ao ar livre, incluindo acampamentos e programas educacionais
+          sobre natureza.
+        </p>
+      </section>
+      <br />
+    </main>
+  </body>
+  <footer>
+    <p>&copy2025 PXJP. Todos os direitos reservados.</p>
+  </footer>
 </html>

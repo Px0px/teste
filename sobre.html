@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <link rel="icon" href="imgs/canada.png" type="image/x-icon">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=, initial-scale=1.0">
-        <title>Ottawa city</title>
-        <link rel="stylesheet" href="ssbore.css">
-    </head>
-    <body>
-        <header>
-            <h1>Ottawa</h1>
-            <div class="anima">
-            <a class="a1" href="index.html">Início</a>
-            <a class="a2" href="princloc.html">Principais locais</a>
-            <a class="a3" href="feedback.html">Deixe seu Feedback</a>
-            </div>
-        </header>
+  <head>
+    <link rel="icon" href="imgs/canada.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Ottawa city</title>
+    <link rel="stylesheet" href="ssbore.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ottawa</h1>
+      <div class="anima">
+        <a class="a1" href="index.html">Início</a>
+        <a class="a2" href="princloc.html">Principais locais</a>
+        <a class="a3" href="feedback.html">Deixe seu Feedback</a>
+      </div>
+      <script>
+        function telaCaindo() {
+          const body = document.body;
+          body.style.transition =
+            "transform 2s cubic-bezier(.68,-0.55,.27,1.55)";
+          body.style.transform = "translateY(100vh)";
+        }
+        document.querySelectorAll(".anima a").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            telaCaindo();
+            setTimeout(() => {
+              window.location.href = this.href;
+            }, 1000);
+          });
+        });
+      </script>
+    </header>
 
-        <main>
-            <h2>Bem-vindo a Ottawa</h2>
-            <p>Ottawa é a capital do Canadá, conhecida por sua rica história e cultura vibrante.</p>
-            <img src="https://viajonarios.com/wp-content/uploads/2024/07/roteiro-ottawa.jpeg" alt="Vista de Ottawa" width="300">
-            <section>
-            <p>A cidade é conhecida por sua arquitetura elegante, espaços verdes bem cuidados e pela forte presença de instituições governamentais, incluindo o Parlamento Canadense, onde se destaca a icónica Torre da Paz.</p>
-            </section><br>
-            <section>
-                <p>
-                Com uma população diversa e bilíngue, o inglês e o francês são amplamente falados. Ottawa abriga museus de renome, como o Museu Canadense de História e a Galeria Nacional do Canadá, além de festivais famosos como o Winterlude, que celebra o inverno com esculturas de gelo e patinação no canal Rideau — o maior rinque de patinação natural do mundo.</p>
-            </section><br>
-            <section>
-                <p>
-                A cidade combina modernidade e tradição: enquanto bairros históricos como ByWard Market oferecem mercados, restaurantes e vida noturna animada, áreas como Kanata e Orleans apresentam um estilo mais residencial e tecnológico, refletindo a importância da indústria de alta tecnologia na economia local.</p>
-            </section><br>
-            <section>
-                <p>
-                O clima é marcado por invernos frios e nevados e verões quentes, tornando Ottawa um destino que muda completamente de aparência e actividades ao longo das estações.</p>
-            </section>
-        </main>
-    </body>
-     <footer>
-        <p>&copy2025 PXJP. Todos os direitos reservados. </p>
-    </footer>
+    <main>
+      <h2>Bem-vindo a Ottawa</h2>
+      <p>
+        Ottawa é a capital do Canadá, conhecida por sua rica história e cultura
+        vibrante.
+      </p>
+      <img
+        src="https://viajonarios.com/wp-content/uploads/2024/07/roteiro-ottawa.jpeg"
+        alt="Vista de Ottawa"
+        width="300"
+      />
+      <section>
+        <p>
+          A cidade é conhecida por sua arquitetura elegante, espaços verdes bem
+          cuidados e pela forte presença de instituições governamentais,
+          incluindo o Parlamento Canadense, onde se destaca a icónica Torre da
+          Paz.
+        </p>
+      </section>
+      <br />
+      <section>
+        <p>
+          Com uma população diversa e bilíngue, o inglês e o francês são
+          amplamente falados. Ottawa abriga museus de renome, como o Museu
+          Canadense de História e a Galeria Nacional do Canadá, além de
+          festivais famosos como o Winterlude, que celebra o inverno com
+          esculturas de gelo e patinação no canal Rideau — o maior rinque de
+          patinação natural do mundo.
+        </p>
+      </section>
+      <br />
+      <section>
+        <p>
+          A cidade combina modernidade e tradição: enquanto bairros históricos
+          como ByWard Market oferecem mercados, restaurantes e vida noturna
+          animada, áreas como Kanata e Orleans apresentam um estilo mais
+          residencial e tecnológico, refletindo a importância da indústria de
+          alta tecnologia na economia local.
+        </p>
+      </section>
+      <br />
+      <section>
+        <p>
+          O clima é marcado por invernos frios e nevados e verões quentes,
+          tornando Ottawa um destino que muda completamente de aparência e
+          actividades ao longo das estações.
+        </p>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <p>&copy2025 PXJP. Todos os direitos reservados.</p>
+  </footer>
 </html>
-

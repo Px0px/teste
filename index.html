@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ottawa city</title>
-        <link rel="stylesheet" href="sindex.css">
-        <link rel="icon" href="imgs/canada.png" type="image/x-icon">
-    </head>
-    <body>
-        <div class="container">
-            <main class="slide-in-right">
-                <h1 class="fade-in">Ottawa</h1><br>
-                <h2 class="fade-in">Conheça mais sobre Ottawa</h2><br>
-               <button class="pulse">Clique aqui para saber mais</button>
-                <script>
-                    const button = document.querySelector('button');
-                    const main = document.querySelector('main');
-                    button.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        main.classList.remove('slide-in-right');
-                        main.classList.add('slide-out-left');
-                        setTimeout(() => {
-                            window.location.href = 'sobre.html';
-                        }, 500); // ajuste o tempo conforme a duração da animação
-                    });
-                </script>
-            </main>
-        </div> 
-    </body>
-     <footer>
-        <p>&copy2025 PXJP. Todos os direitos reservados. </p>
-    </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ottawa city</title>
+    <link rel="stylesheet" href="sindex.css" />
+    <link rel="icon" href="imgs/canada.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="slide-in-right">
+        <h1 class="fade-in">Ottawa</h1>
+        <br />
+        <h2 class="fade-in">Conheça mais sobre Ottawa</h2>
+        <br />
+        <button class="pulse">Clique aqui para saber mais</button>
+        <script>
+          const button = document.querySelector("button");
+          const main = document.querySelector("main");
+          button.addEventListener("click", function (e) {
+            e.preventDefault();
+            main.classList.remove("slide-in-right");
+            main.classList.add("slide-out-left");
+            setTimeout(() => {
+              window.location.href = "sobre.html";
+            }, 500);
+          });
+        </script>
+      </main>
+    </div>
+  </body>
+  <footer>
+    <p>&copy2025 PXJP. Todos os direitos reservados.</p>
+  </footer>
 </html>

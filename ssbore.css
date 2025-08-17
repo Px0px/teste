@@ -30,8 +30,9 @@ p {
     border-radius:  10px;
     background-color: rgb(136, 100, 237);
 }
-
-.a1{
+.a1,
+.a2,
+.a3 {
     color: #00c3ff;
     font-size: 2rem;
     border: 1px solid transparent;
@@ -40,41 +41,22 @@ p {
     padding: 2px;
     display: inline-block;
     block-size: 3rem;
-    inline-size: 5rem;
-    text-align: center;
     text-size-adjust: 100%;
-} 
-
-.a2{
-    color: #00c3ff;
-    font-size: 2rem;
-    border: 1px solid transparent;
-    background-color: rgb(136, 100, 237);
-    border-radius: 10px;
-    padding: 2px;
-    display: inline-block;
-    block-size: 3rem;
-    inline-size: 14rem;
     text-align: center;
-    text-size-adjust: 100%;
-
+    transition: opacity 0.35s, transform 0.35s;
 }
-.a3{
-    margin-top: 0.5rem;
-    color: #00c3ff;
-    font-size: 2rem;
-    border: 1px solid transparent;
-    background-color: rgb(136, 100, 237);
-    border-radius: 10px;
-    padding: 2px;
-    display: inline-block;
-    block-size: 3rem;
+
+.a1 { inline-size: 5rem; }
+.a2 { inline-size: 14rem; }
+.a3 {
     inline-size: 18rem;
-    text-size-adjust: 100%;
+    margin-top: 0.5rem;
 }
-.anima:hover > :not(:hover){
+
+.anima:hover > :not(:hover) {
     opacity: .4;
     transform: scale(0.9);
-     transition: .35s;
-    cursor:pointer;
+    transition: .35s;
+    cursor: pointer;
 }
+
