@@ -88,3 +88,15 @@ a{
      transition: .35s;
     cursor:pointer;
 }
+
+.icon {
+      width: 60px;   
+      height: 60px;
+      background-image: url("https://images.icon-icons.com/2596/PNG/512/local_icon_155176.png"); 
+      background-size: cover;
+    }
+div{
+    display:block;
+    block-size: 8rem;
+    margin-left:auto;
+}

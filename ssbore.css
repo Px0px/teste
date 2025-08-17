@@ -59,4 +59,14 @@ p {
     transition: .35s;
     cursor: pointer;
 }
-
+.icon {
+      width: 60px;   
+      height: 60px;
+      background-image: url("https://cdn-icons-png.flaticon.com/512/1150/1150645.png"); 
+      background-size: cover;
+    }
+div{
+    display:block;
+    block-size: 8rem;
+    margin-left:auto;
+}
