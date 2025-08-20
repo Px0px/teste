@@ -42,7 +42,9 @@ a{
     border: #000 1px solid;
     border-radius:10px;
     background-color: #00c3ff;
+    text-decoration: none;
 }
+
 .a1{
     color: #00c3ff;
     font-size: 2rem;
