@@ -48,8 +48,6 @@ p {
     border-radius: 10px;
     display: inline-block;
     block-size: 3rem;
-    text-size-adjust: 100%;
-    text-align: center;
     transition: opacity 0.35s, transform 0.35s;
 }
 
