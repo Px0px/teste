@@ -32,9 +32,10 @@ p {
     text-align: justify;
     font-family: Arial, sans-serif;
     line-height: 1.5;
-    margin: 10px 0;
+    margin: 100px 0;
     border: 10px solid transparent;
     border-radius:  10px;
+    
     background-color: rgb(136, 100, 237);
     width: auto;
 }
