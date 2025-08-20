@@ -34,7 +34,7 @@ p {
     line-height: 1.5;
     margin: 10px 0;
     border: 10px solid transparent;
-    border-radius:  1px;
+    border-radius:  10px;
     background-color: rgb(136, 100, 237);
     width: auto;
 }
