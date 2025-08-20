@@ -35,39 +35,16 @@
     </legend>
 
     <main>
-      <form id="feedbackForm">
-        <label for="name">Nome completo:</label><br />
-        <input type="text" id="name" name="name" required /><br /><br />
+<button onclick="abrirFeedback()">Criar feedback</button>
 
-        <label for="email">E-mail:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
+<script>
+  function abrirFeedback() {
 
-        <label for="feedback">Feedback:</label><br />
-        <textarea
-          id="feedback"
-          name="feedback"
-          rows="4"
-          cols="50"
-          required
-        ></textarea
-        ><br /><br />
+    window.open("https://forms.gle/nuwWxK193hxtnG4i8", "_blank");
 
-        <button type="submit">ENVIAR</button>
-
-        <script>
-          document
-            .getElementById("feedbackForm")
-            .addEventListener("submit", function (e) {
-              e.preventDefault();
-              const name = document.getElementById("name").value.trim();
-              const email = document.getElementById("email").value.trim();
-              const feedback = document.getElementById("feedback").value.trim();
-              if (name && email && feedback) {
-                window.location.href = "index.html";
-              }
-            });
-        </script>
-      </form>
+    window.location.href = "index.html";
+  }
+</script>
     </main>
   </body>
   <footer>
