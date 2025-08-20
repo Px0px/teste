@@ -42,6 +42,7 @@ p {
 .a3 {
     padding-bottom: 2rem ;
     color: #00c3ff;
+    text-align: center;
     font-size: 2rem;
     border: 0.2rem solid transparent;
     background-color: rgb(136, 100, 237);
