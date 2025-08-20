@@ -28,12 +28,13 @@ h1, h2 {
 a{
     text-decoration: none;
     font-size: 0.2rem;
+    text-size-adjust: 1rem;
 }
 p {
     text-align: justify;
     font-family: Arial, sans-serif;
     line-height: 1.5;
-    margin: 15px 0;
+    margin: 10px 0;
     border: 1px solid transparent;
     border-radius:  10px;
     background-color: rgb(136, 100, 237);
