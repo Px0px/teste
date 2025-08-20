@@ -55,7 +55,7 @@ p {
 .a1 { inline-size: 5rem; }
 .a2 { inline-size: 14rem; }
 .a3 {
-    inline-size: 18rem;
+    inline-size: 20rem;
     margin-top: 0.5rem;
 }
 
@@ -76,7 +76,7 @@ p {
 .a1,
 .a2,
 .a3 {
-    padding-bottom: 0 ;
+    padding-bottom: 1rem ;
     color: #00c3ff;
     font-size: 2rem;
     border: 0.2rem solid transparent;
