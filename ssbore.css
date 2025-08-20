@@ -47,7 +47,7 @@ p {
     background-color: rgb(136, 100, 237);
     border-radius: 10px;
     display: inline-block;
-    block-size: 4rem;
+    block-size: 2rem;
     transition: opacity 0.35s, transform 0.35s;
 }
 
