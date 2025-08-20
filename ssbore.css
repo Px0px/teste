@@ -46,7 +46,6 @@ p {
     border: 0.2rem solid transparent;
     background-color: rgb(136, 100, 237);
     border-radius: 10px;
-    padding: 2px;
     display: inline-block;
     block-size: 3rem;
     text-size-adjust: 100%;
