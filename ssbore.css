@@ -40,7 +40,7 @@ p {
 .a1,
 .a2,
 .a3 {
-    padding-bottom: 0 ;
+    padding-bottom: 2rem ;
     color: #00c3ff;
     font-size: 2rem;
     border: 0.2rem solid transparent;
@@ -71,3 +71,19 @@ p {
       background-size: cover;
     }
 
+@media screen and (max-wight: 700px) {
+.a1,
+.a2,
+.a3 {
+    padding-bottom: 0 ;
+    color: #00c3ff;
+    font-size: 2rem;
+    border: 0.2rem solid transparent;
+    background-color: rgb(136, 100, 237);
+    border-radius: 10px;
+    display: inline-block;
+    block-size: 4rem;
+    transition: opacity 0.35s, transform 0.35s;
+
+}
+} 
