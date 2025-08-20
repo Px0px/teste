@@ -40,7 +40,7 @@ p {
 .a1,
 .a2,
 .a3 {
-    padding-bottom: 1rem ;
+    padding-bottom: 0 ;
     color: #00c3ff;
     font-size: 2rem;
     border: 0.2rem solid transparent;
