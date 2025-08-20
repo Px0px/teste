@@ -18,14 +18,15 @@ body {
     background-size: cover;
     color: aliceblue;
 }
-h1 { 
+h1, h2 { 
     font-family: "Rubik", sans-serif;
     text-shadow: 8px 8px 14px cornflowerblue;
+    font-size: 2rem;
 } 
 p {
     text-align: justify;
     font-family: Arial, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin: 10px 0;
     border: 1px solid transparent;
@@ -37,7 +38,7 @@ p {
 .a3 {
     color: #00c3ff;
     font-size: 2rem;
-    border: 1px solid transparent;
+    border: 0.2rem solid transparent;
     background-color: rgb(136, 100, 237);
     border-radius: 10px;
     padding: 2px;
