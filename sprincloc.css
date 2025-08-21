@@ -1,111 +1,191 @@
-*{
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 header {
-    color: rgb(255, 255, 255);
-    padding: 10px 0;
-    text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 10px 0;
+  text-align: center;
 }
 body {
-    display: block;
-    text-align: center;
-    background-image: url('https://img.freepik.com/vetores-gratis/gradiente-de-fundo-de-quadro-de-arame-abstrato_23-2149009903.jpg?semt=ais_hybrid&w=740&q=80');
-    background-size: cover;
-    color: aliceblue;
+  display: block;
+  text-align: center;
+  background-image: url("https://img.freepik.com/vetores-gratis/gradiente-de-fundo-de-quadro-de-arame-abstrato_23-2149009903.jpg?semt=ais_hybrid&w=740&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: aliceblue;
 }
 
-p {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin: 4px;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    background-color: rgb(35, 0, 131);
+.pf {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 4px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: rgb(35, 0, 131);
 }
 li {
-    list-style-type: none;
-    margin: 10px 0;
-    padding: 5px;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
 }
 
-a{
-    border: #000 1px solid;
-    border-radius:10px;
-    background-color: #00c3ff;
-    text-decoration: none;
+a {
+  border: #000 1px solid;
+  border-radius: 10px;
+  background-color: #00c3ff;
+  text-decoration: none;
 }
 
-.a1{
-    color: #00c3ff;
-    font-size: 2rem;
-    border: 1px solid transparent;
-    background-color: rgb(136, 100, 237);
-    border-radius: 10px;
-    padding: 2px;
-    display: inline-block;
-    block-size: 3rem;
-    inline-size: 5rem;
-    text-align: center;
-    text-size-adjust: 100%;
-    margin:4px;
-} 
+.a1 {
+  color: #00c3ff;
+  font-size: 2rem;
+  border: 1px solid transparent;
+  background-color: rgb(136, 100, 237);
+  border-radius: 10px;
+  padding: 2px;
+  display: inline-block;
+  block-size: 3rem;
+  inline-size: 5rem;
+  text-align: center;
+  text-size-adjust: 100%;
+  margin: 4px;
+}
 
-.a2{
-    color: #00c3ff;
-    font-size: 2rem;
-    border: 1px solid transparent;
-    background-color: rgb(136, 100, 237);
-    border-radius: 10px;
-    padding: 2px;
-    display: inline-block;
-    block-size: 3rem;
-    inline-size: 7rem;
-    text-align: center;
-    text-size-adjust: 100%;
-    margin:4px;
+.a2 {
+  color: #00c3ff;
+  font-size: 2rem;
+  border: 1px solid transparent;
+  background-color: rgb(136, 100, 237);
+  border-radius: 10px;
+  padding: 2px;
+  display: inline-block;
+  block-size: 3rem;
+  inline-size: 7rem;
+  text-align: center;
+  text-size-adjust: 100%;
+  margin: 4px;
 }
-.a3{
-    color: #00c3ff;
-    font-size: 2rem;
-    border: 1px solid transparent;
-    background-color: rgb(136, 100, 237);
-    border-radius: 10px;
-    padding: 2px;
-    display: inline-block;
-    block-size: 3rem;
-    inline-size: 20rem;
-    text-size-adjust: 100%;
-    margin:4px;
+.a3 {
+  color: #00c3ff;
+  font-size: 2rem;
+  border: 1px solid transparent;
+  background-color: rgb(136, 100, 237);
+  border-radius: 10px;
+  padding: 2px;
+  display: inline-block;
+  block-size: 3rem;
+  inline-size: 20rem;
+  text-size-adjust: 100%;
+  margin: 4px;
 }
-.anima:hover > :not(:hover){
-    opacity: .4;
-    transform: scale(0.9);
-     transition: .35s;
-    cursor:pointer;
+.anima:hover > :not(:hover) {
+  opacity: 0.4;
+  transform: scale(0.9);
+  transition: 0.35s;
+  cursor: pointer;
 }
 
 .icon {
-      width: 60px;   
-      height: 60px;
-      background-image: url("https://images.icon-icons.com/2596/PNG/512/local_icon_155176.png"); 
-      background-size: cover;
-    }
-div{
-    display:block;
-    block-size: 8rem;
-    margin-left:auto;
+  width: 60px;
+  height: 60px;
+  background-image: url("https://images.icon-icons.com/2596/PNG/512/local_icon_155176.png");
+  background-size: cover;
 }
-main{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
+div {
+  display: block;
+  block-size: 8rem;
+  margin-left: auto;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.parlamento,
+.CanalRideau,
+.ByWardMarket,
+.NationalGallery,
+.CanadianMuseumNature,
+.CanadianMuseumHistory,
+.MajorsHillPark,
+.RideauHall,
+.DowsLake,
+.GatineauPark {
+  display: flex;
+  align-items: center;   
+  justify-content: space-between;
+  background-color: rgb(159, 100, 237);
+  padding: 10px;
+  margin: 1rem;          
+  border-radius: 10px;
+}
+.parlamento a,
+.CanalRideau a,
+.ByWardMarket a,
+.NationalGallery a,
+.CanadianMuseumNature a,
+.CanadianMuseumHistory a,
+.MajorsHillPark a,
+.RideauHall a,
+.DowsLake a,
+.GatineauPark a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-decoration: none;
+  flex: 1;               
+  text-align: center;    
+}
+.parlamento img,
+.CanalRideau img,
+.ByWardMarket img,
+.NationalGallery img,
+.CanadianMuseumNature img,
+.CanadianMuseumHistory img,
+.MajorsHillPark img,
+.RideauHall img,
+.DowsLake img,
+.GatineauPark img {
+  width: 100px;   
+  height: auto;
+  margin-left: 10px;
+  border-radius: 8px;
+}
+
+.name{
+    padding: 2px;
+    background-color: rgb(100, 109, 237);
+    display:block;
+    block-size: 2rem;
+    inline-size: 7rem;
+    border-color: transparent;
+    border-radius: 5px;
+    color:black;
+}
+img{
+    border: 2px #000 solid ;
+    border-radius:10px;
+}
+.parlamento a:hover,
+.CanalRideau a:hover,
+.ByWardMarket a:hover,
+.NationalGallery a:hover,
+.CanadianMuseumNature a:hover,
+.CanadianMuseumHistory a:hover,
+.MajorsHillPark a:hover,
+.RideauHall a:hover,
+.DowsLake a:hover,
+.GatineauPark a:hover {
+    background-color: white;
 }
