@@ -34,33 +34,60 @@ p {
     background-color: rgb(136, 100, 237);
     width: auto;
 }
-.a1,
-.a2,
-.a3 {
-    padding-bottom: 2rem ;
-    color: #00baf3;
-    text-align: center;
+.a1{
+    color: #00c3ff;
     font-size: 2rem;
-    border: 0.2rem solid transparent;
+    border: 1px solid transparent;
     background-color: rgb(136, 100, 237);
     border-radius: 10px;
+    padding: 2px;
     display: inline-block;
-    block-size: 1rem;
-    transition: opacity 0.35s, transform 0.35s;
-}
+    block-size: 3rem;
+    inline-size: 5rem;
+    text-align: center;
+    text-size-adjust: 100%;
+    margin: 4px;
+} 
 
-.a1 { inline-size: 5rem; }
-.a2 { inline-size: 14rem; }
-.a3 {
+.a2{
+    color: #00c3ff;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    background-color: rgb(136, 100, 237);
+    border-radius: 10px;
+    padding: 2px;
+    display: inline-block;
+    block-size: 3rem;
+    inline-size: 18rem;
+    text-align: center;
+    text-size-adjust: 100%;
+    margin: 4px;
+}
+.a3{
+    color: #00c3ff;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    background-color: rgb(136, 100, 237);
+    border-radius: 10px;
+    padding: 2px;
+    display: inline-block;
+    block-size: 3rem;
     inline-size: 20rem;
-    margin-top: 0.5rem;
+    text-size-adjust: 100%;
+    margin:4px;
 }
 
-.anima:hover > :not(:hover) {
+.anima:hover > :not(:hover){
     opacity: .4;
     transform: scale(0.9);
-    transition: .35s;
-    cursor: pointer;
+     transition: .35s;
+    cursor:pointer;
+}
+
+footer{
+    margin-left: 20%;
+    margin-right: 20% ;
+    margin-top:3.5rem
 }
 .icon {
       width: 60px;   
@@ -68,20 +95,3 @@ p {
       background-image: url("https://cdn-icons-png.flaticon.com/512/1150/1150645.png"); 
       background-size: cover;
     }
-
-@media screen and (max-wight: 800px) {
-.a1,
-.a2,
-.a3 {
-    padding: auto ;
-    color: #00c3ff;
-    font-size: 2rem;
-    border: 0.2rem solid transparent;
-    background-color: rgb(136, 100, 237);
-    border-radius: 10px;
-    display: inline-block;
-    block-size: 2rem;
-    transition: opacity 0.35s, transform 0.35s;
-
-}
-} 
