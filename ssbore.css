@@ -89,9 +89,20 @@ footer{
     margin-right: 20% ;
     margin-top:3.5rem
 }
+.container {
+  position: relative;   /* serve de referência */
+  width: 100%;
+  height: 200px;        /* só para exemplo */
+  background-color: #f2f2f2;
+}
+
 .icon {
-      width: 60px;   
-      height: 60px;
-      background-image: url("https://cdn-icons-png.flaticon.com/512/1150/1150645.png"); 
-      background-size: cover;
-    }
+  width: 60px;   
+  height: 60px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1150/1150645.png"); 
+  background-size: cover;
+  position: absolute;
+  top: 10px;     /* distância do topo */
+  right: 10px;   /* distância da direita */
+}
+
