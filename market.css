@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background-image: url('https://img.freepik.com/vetores-gratis/gradiente-de-fundo-de-quadro-de-arame-abstrato_23-2149009903.jpg?semt=ais_hybrid&w=740&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+main {
+  display: grid;
+  gap: 10px;
+}
+
+/* Card principal */
+.parlamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3D00D1;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  color: white;
+}
+
+/* Nome */
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: #210073;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Imagem principal */
+.principal {
+  width: 260px;
+  border-radius: 10px;
+  margin: 15px 0;
+  border: 3px solid #210073;
+}
+
+/* Texto */
+.desc {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5rem;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+/* Informações extras */
+.info {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: left;
+}
+
+.info p {
+  margin: 6px 0;
+}
+
+/* Galeria */
+.galeria {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.galeria img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #210073;
+}
+
+/* Botão voltar */
+.pulse {
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(18, 220, 0, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(220,0,0,0); }
+  100% { box-shadow: 0 0 0 0 rgba(220,0,0,0); }
+}
+
+button {
+  border: 1px solid #210073;
+  border-radius: 10px;
+  background-color: #3D00D1;
+  cursor: pointer;
+  display: block;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  block-size: 4rem;
+  inline-size: 8rem;
+  font-size: xx-large;
+  color: white;
+  animation: pulse 1.2s infinite;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .parlamento {
+    padding: 10px;
+  }
+
+  .principal {
+    width: 200px;
+  }
+
+  .galeria img {
+    width: 100px;
+  }
+
+  .info {
+    font-size: 0.9rem;
+  }
+
+  .name {
+    font-size: 1.4rem;
+  }
+}
