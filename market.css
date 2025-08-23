@@ -102,3 +102,45 @@ button {
 a {
     text-decoration: none;
 }
+@media (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content img {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .text {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  .map-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  iframe {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  button {
+    inline-size: 6rem;
+    block-size: 3rem;
+    font-size: large;
+  }
+}
