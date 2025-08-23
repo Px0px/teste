@@ -189,3 +189,14 @@ img{
 .GatineauPark a:hover {
     background-color: white;
 }
+@media screen and (max-width:1000px){
+  .name{
+  display: flex;    
+  margin:auto;
+  border-radius:10px;         
+  align-items: center;      
+  justify-content: center;    
+  height: 3rem;               
+  text-align: center;
+  }
+}
